@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.DragAndDropOptions.to;
 import static com.codeborne.selenide.Selenide.*;
 
-public class DragAndDrop2 {
+public class DragAndDropTest2 {
     @BeforeAll
     static void setUp() {
         Configuration.browserSize = "1920x1080";
@@ -17,7 +17,7 @@ public class DragAndDrop2 {
     }
 
     @Test
-    void dragAndDrop() {
+    void dragAndDropTest() {
         Configuration.fastSetValue = true;
         open("/drag_and_drop");
 
