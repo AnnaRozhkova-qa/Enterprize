@@ -19,9 +19,11 @@ public class HoverForSolutionTest {
 
 
  @Test
- void HoverTest() {
-     open("https://github.com/");
+ void hoverTest() {
+      open("https://github.com/");
       $(byTagAndText("button", "Solutions")).hover();
       $("a[href='https://github.com/enterprise']").click();
+      $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n"+
+      "developer platform"));
     }
 }

@@ -21,9 +21,6 @@ public class DragAndDropTest1 {
         open("/drag_and_drop");
         $("#column-a").shouldHave(exactText("A"));
         $("#column-b").dragAndDrop(to("#column-a"));
-
-        //$("#column-b").hover();
-        //actions().clickAndHold().moveByOffset(-200, 0).release().perform();
         $("#column-a").shouldHave(exactText("B"));
     }
 }
